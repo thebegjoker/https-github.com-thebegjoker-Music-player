@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <!-- SATRT NAVBAR -->
+        <nav>
+            <div class="container nav-container">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">gallery</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+
+
+        <!-- START MAIN -->
+        <main>
+            <div class="container main-container">
+                <div class="left">
+                    <h1>New Era <br>
+                        of sounds</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry.Lorem  
+                         Ipsumhas   
+                       been the <br> industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="right">
+                    <div class="main-img">
+                        <img src="./img/product 1.png" alt="">                        
+                    </div>                    
+                </div>
+                <div class="arrow">
+                    <img src="img/arow.svg" alt="">
+                </div>
+            </div>
+        </main>
+        <!-- END MAIN -->
+
+        <!--START FOOTER -->
+        <div class="fotter">
+            <div class="fotter-container container">
+                <p>© 2021 Dummy  Terms Privacy</p>
+                <div class="social-aria">
+                    <a href=""><img src="./img/facebook.svg" alt=""></a>
+                    <a href=""><img src="./img/instagram.svg" alt=""></a>
+                    <a href=""><img src="./img/twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!--END FOOTER -->
+
+    </section>
+     <!--script -->
+    <script>
+        let productImg = ['./img/product 1.png','/img/product 2.png','./img/product 3.png']
+        let img = document.querySelector('.main-img img')
+
+        let count = 0;
+    document.querySelector('.arrow img').addEventListener('click',()=>{
+        count++
+        img.src = productImg[count]
+        if(count>=productImg.length ){
+            count = 0;
+            img.src = productImg[count]
+        }
+    })
+    </script>
+</body>
+</html>

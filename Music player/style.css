@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+section{
+    background-image: url('./img/bg.svg');
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.container{
+    max-width: 1220px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.logo{
+    width: 97px;
+    height: 49px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 70px;
+}
+
+ul li a{
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    transition: .4s ease;
+    border-bottom: 1px solid transparent;
+}
+ul li a:hover{
+    color: #5558A3;
+    border-bottom: 1px solid #5558A3;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.left{
+    padding: 60px;
+
+}
+.left h1{
+    font-weight: 900px;
+    line-height: 85px;
+    font-size: 90px;
+    color: #51068B;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.left p{
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    font-weight: 400;
+}
+
+.right .main-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.arrow img{
+    height: 100%;
+    width: 100%;
+}
+
+.fotter{
+    margin-top: 138px;
+}
+
+.fotter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotter-container p{
+    line-height: 17px;
+    font-size: 14px;
+    color: #5558A3;
+    font-weight: 400;
+}
+
+.social-aria{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+}
+.social-aria a{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(137, 139, 191, 0.1);
+    border-radius: 50%;
+    transition: .4s ease;
+}
+.social-aria a:first-child{
+    padding: 15px 20px;
+}
+.social-aria a:hover{
+    background: #5558A3;
+}
